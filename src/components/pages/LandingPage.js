@@ -6,7 +6,7 @@ import {
   Center,
   Text,
   Heading,
-  Link as ChakraLink,
+  Link,
 } from '@chakra-ui/react'
 import Header from '../Header'
 import Footer from '../Footer'
@@ -36,13 +36,13 @@ const LandingPage = () => {
               Help your friends and loved ones by creating and sending videos on
               how to get things done on a website.
             </Text>
-            <ChakraLink
-              to='/signup'
+            <Link
+              href='/signup'
               className='main-info-button'
               w='239px'
               h='60px'>
               Install HelpMeOut<i className='fa-solid fa-arrow-right-long'></i>
-            </ChakraLink>
+            </Link>
           </Box>
           <Box className='main-info-images'>
             <Image src='/AdobeStock_400053098 1.png' className='img' />
