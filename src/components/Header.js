@@ -66,7 +66,6 @@ const Header = () => {
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
               variant='unstyled'
               size='md'
-              border='1px solid red'
               mr={{ base: '-120px', sm: '-100px', md: '0', lg: '0', xl: '0' }}
               onClick={toggleMenu}
             />

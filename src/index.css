@@ -305,6 +305,16 @@ letter-spacing: 0.16px;
     color: #141414;
     flex-direction: row;
   }
+
+  .landing-main-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    padding: 100px;
+  }
   @media screen and (max-width: 768px) {
     .main-info-wrapper {
       flex-direction: column;
@@ -313,6 +323,9 @@ letter-spacing: 0.16px;
       font-size: 20px;
       line-height: normal;
       font-weight: 200;
+    }
+    .landing-main-wrapper {
+      padding: 20px 20px;
     }
   }
   .main-info-heading {
@@ -438,7 +451,14 @@ flex-direction: column;
 align-items: flex-start;
 gap: 48px;
 flex-shrink: 0;
-align-self: stretch;
+}
+@media screen and (max-width: 768px) {
+  .features-text-wrapper {
+    margin-top: 30px;
+  }
+  .features-info-section {
+   align-items: center;
+  }
 }
 .record-info-header {
   display: flex;
@@ -505,8 +525,15 @@ margin: 50px 0;
 .how-section {
 display: flex;
  flex-direction: row;
+ justify-content: center;
+ align-items: center;
 text-align: center;
 row-gap: 40px;
+}
+.how-record-img {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 @media screen and (max-width: 768px) {
   .flex-col {
@@ -547,6 +574,14 @@ font-size: 28px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+}
+.how-col {
+  row-gap: 100px;
+}
+@media screen and (max-width: 768px) {
+  .one-wrapper {
+    margin-bottom: 20px;
+  }
 }
 .record-info-text {
   color: var(--Grey, #616163);

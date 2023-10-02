@@ -15,12 +15,7 @@ const LandingPage = () => {
   return (
     <>
       <Header />
-      <Box
-        justify='center'
-        mt='0'
-        align='center'
-        width={{ base: 'auto', sm: 'auto', md: 'auto', lg: 'auto', xl: '100%' }}
-        height='100%'>
+      <Box className='landing-main-wrapper'>
         <Center
           className='main-info-wrapper'
           justify='center'
@@ -105,7 +100,7 @@ const LandingPage = () => {
           <Text className='how-header'>How it works</Text>
           <Box className='flex-col'>
             <Box className='how-section'>
-              <Box>
+              <Box className='how-col'>
                 <Box className='center-number'>
                   <Box className='one-wrapper'>
                     <Text className='one-text'>1</Text>
@@ -117,7 +112,9 @@ const LandingPage = () => {
                   which part of your screen to capture and who you want to send
                   it to.
                 </Text>
-                <Image src='/record-img.jpg' />
+                <Center>
+                  <Image src='/record-img.jpg' />
+                </Center>
               </Box>
             </Box>
             <Box className='how-section'>
@@ -133,7 +130,9 @@ const LandingPage = () => {
                   your audience via email or copy the link to send via any
                   platform.
                 </Text>
-                <Image src='/record-img.jpg' />
+                <Center>
+                  <Image src='/record-img.jpg' />
+                </Center>
               </Box>
             </Box>
             <Box className='how-section'>
@@ -149,15 +148,17 @@ const LandingPage = () => {
                   provided link, with our user-friendly interface suitable for
                   everyone.
                 </Text>
-                <Image src='/record-img.jpg' />
+                <Center>
+                  <Image src='/record-img.jpg' />
+                </Center>{' '}
               </Box>
             </Box>
           </Box>
         </Center>
-        <Center>
-          <Footer />
-        </Center>
       </Box>
+      <Center>
+        <Footer />
+      </Center>
     </>
   )
 }
